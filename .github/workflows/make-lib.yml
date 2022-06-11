@@ -1,0 +1,25 @@
+on: 
+  push:
+    branches: [main]
+  pull_request:
+
+
+jobs:
+  makelib_job:
+    runs-on: ubuntu-latest
+    name: Make library job
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-go@v3
+        with: 
+          go-version: '>=1.18.0'
+
+      - name: Setup JDK step 
+        uses: actions/setup-java@v3
+        with: 
+          java-version: 11
+
+      - name: Setup Android SDK step 
+        uses: android-actions/setup-android@v2
+
+
