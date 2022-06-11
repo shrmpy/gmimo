@@ -23,4 +23,8 @@ jobs:
       - name: Setup Android SDK step 
         uses: android-actions/setup-android@v2
 
+      - name: Add gomobile step 
+        run: |
+          go install golang.org/x/mobile/cmd/gomobile@latest
+          gomobile init
 
