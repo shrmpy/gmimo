@@ -30,3 +30,10 @@ jobs:
           go get golang.org/x/mobile/bind
           gomobile bind --target android
 
+      - name: Archive lib artifacts 
+        uses: actions/upload-artifact@v3
+        with: 
+          name: and-shared-lib
+          path: *.aar
+          retention-days: 1
+
