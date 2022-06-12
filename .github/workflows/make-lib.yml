@@ -34,6 +34,6 @@ jobs:
         uses: actions/upload-artifact@v3
         with: 
           name: and-shared-lib
-          path: |
-            *.aar
+          path: *.aar
+          retention-days: 1
 
