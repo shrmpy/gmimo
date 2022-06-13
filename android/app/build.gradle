@@ -57,3 +57,14 @@ android {
 flutter {
     source '../..'
 }
+
+repositories {
+  flatDir {
+    dirs 'src/main/libs'
+  }
+}
+
+dependencies {
+  api(name: 'gomobilelib', ext: 'aar')
+}
+
