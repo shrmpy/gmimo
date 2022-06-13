@@ -63,5 +63,12 @@ jobs:
       - run: flutter pub get
       - run: flutter test
       - run: flutter build apk
+      - name: Archive apk artifacts 
+        uses: actions/upload-artifact@v3
+        with: 
+          name: flutter-and-apk
+          retention-days: 1
+          path: |
+            *.apk
 
 
