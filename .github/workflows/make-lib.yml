@@ -38,3 +38,23 @@ jobs:
           path: |
             *.aar
 
+  flutter_job:
+    needs: makelib_job
+    runs-on: ubuntu-latest
+    name: Make fl android job
+    steps:
+      - uses: actions/checkout@v3
+      - uses: subosito/flutter-action@v2
+        with: 
+          channel: 'stable'
+
+      - name: Setup JDK step 
+        uses: actions/setup-java@v3
+        with: 
+          java-version: 11
+          distribution: 'zulu'
+
+      - run: flutter pub get
+      - run: flutter test
+
+
