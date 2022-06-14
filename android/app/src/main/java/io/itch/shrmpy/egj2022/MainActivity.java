@@ -1,4 +1,5 @@
-package com.example.gomobilewf;
+package io.itch.shrmpy.egj2022;
+
 
 import androidx.annotation.NonNull;
 import io.flutter.embedding.android.FlutterActivity;

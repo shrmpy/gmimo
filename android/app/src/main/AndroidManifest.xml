@@ -1,7 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.gomobilewf">
+   package="io.itch.shrmpy.egj2022">
+   <uses-sdk android:minSdkVersion="19" />
    <application
-        android:label="gomobilewf"
+        android:label="egj2022"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
