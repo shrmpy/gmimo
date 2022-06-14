@@ -1,6 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-   package="io.itch.shrmpy.egj2022">
-   <uses-sdk android:minSdkVersion="19" />
+    package="io.itch.shrmpy.egj2022">
    <application
         android:label="egj2022"
         android:name="${applicationName}"
