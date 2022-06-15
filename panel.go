@@ -223,11 +223,6 @@ func newPanel(wd, ht int) *Panel {
 		fonts = etxt.NewFontLibrary()
 		fg    = color.RGBA{0x66, 0x33, 0x99, 0xff} // pnl foreground text
 	)
-	name, err = fonts.ParseFontBytes(notoSansMonoTTF)
-	if err != nil {
-		log.Fatalf("INFO Parse error Noto Sans Mono, %v", err.Error())
-	}
-	log.Printf("+ font %s", name)
 	name, err = fonts.ParseFontBytes(dejavuSansMonoTTF)
 	if err != nil {
 		log.Fatalf("INFO Parse error DejaVu Sans Mono, %v", err.Error())
