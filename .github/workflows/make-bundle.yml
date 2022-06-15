@@ -33,7 +33,7 @@ jobs:
       - name: Archive lib artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: gomobile-android-apk
+          name: gomobile-debug-apk
           retention-days: 1
           path: |
             *.apk
