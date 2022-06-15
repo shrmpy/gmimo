@@ -1,0 +1,17 @@
+{
+  "gemini": {
+    "follow_redirect": 5,
+    "wrap_text": "word"
+  },
+  "log": {
+    "level": "verbose"
+  },
+  "title": "Gemini config",
+  "tls": {
+    "legacy_common_name": "AcceptLCN",
+    "expired": "CIEReject",
+    "self_signed": "PromptUAE",
+    "minimum_version": "1.2",
+    "known_hosts": "known_capsules"
+  }
+}

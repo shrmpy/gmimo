@@ -10,6 +10,12 @@
 .svn/
 migrate_working_dir/
 google-services.json
+*~
+*.framework
+*.xcframework
+*.aar
+*.jar
+mobile/android/app/release/
 
 # IntelliJ related
 *.iml
