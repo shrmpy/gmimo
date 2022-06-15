@@ -25,15 +25,9 @@ jobs:
 
       - name: Add gomobile step 
         run: |
-          go install github.com/hajimehoshi/ebiten/v2/cmd/ebitenmobile@latest
+          go install golang.org/x/mobile/cmd/gomobile@latest
+          gomobile init
           go get golang.org/x/mobile/bind
-          ebitenmobile bind -target android -javapkg io.itch.shrmpy.egj2022 -o ./mobile/android/egjlib/egjlib.aar ./mobile
+          gomobile build .
 
-      - name: Archive lib artifacts 
-        uses: actions/upload-artifact@v3
-        with: 
-          name: ebitenmobile-view-lib
-          retention-days: 1
-          path: |
-            mobile/android/egjlib/*.aar
 

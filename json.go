@@ -1,4 +1,4 @@
-package egj
+package main
 
 import (
 	"encoding/json"
