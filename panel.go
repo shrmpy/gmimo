@@ -14,13 +14,10 @@ import "github.com/hajimehoshi/ebiten/v2"
 import "github.com/hajimehoshi/ebiten/v2/inpututil"
 import "github.com/tinne26/etxt"
 
-//go:embed NotoSansMono-Regular.ttf
-var notoSansMonoTTF []byte
 
 //go:embed DejaVuSansMono.ttf
 var dejavuSansMonoTTF []byte
 
-////const monospaceFont = "Noto Sans Mono Regular"
 const monospaceFont = "DejaVu Sans Mono"
 const pxht = 18
 
