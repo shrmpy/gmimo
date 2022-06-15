@@ -30,4 +30,11 @@ jobs:
           go get golang.org/x/mobile/bind
           gomobile build -target=android .
 
+      - name: Archive lib artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: gomobile-android-apk
+          retention-days: 1
+          path: |
+            *.apk
 
