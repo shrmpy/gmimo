@@ -27,13 +27,13 @@ jobs:
         run: |
           go install github.com/hajimehoshi/ebiten/v2/cmd/ebitenmobile@latest
           go get golang.org/x/mobile/bind
-          ebitenmobile bind -target android -javapkg io.itch.shrmpy.egj2022 -o egjlib.aar ./mobile
+          ebitenmobile bind -target android -javapkg io.itch.shrmpy.egj2022 -o ./mobile/android/egjlib/egjlib.aar ./mobile
 
       - name: Archive lib artifacts 
         uses: actions/upload-artifact@v3
         with: 
-          name: and-shared-lib
+          name: ebitenmobile-view-lib
           retention-days: 1
           path: |
-            *.aar
+            mobile/android/egjlib/*.aar
 
